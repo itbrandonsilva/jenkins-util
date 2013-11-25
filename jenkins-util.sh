@@ -6,7 +6,7 @@ case "$1" in
 
 "clone")
     echo "Cloning...";
-    rm -rf app;
+    rm -rf $3;
     git clone $2 $3;
     echo "Cloning complete.";
     ;;
